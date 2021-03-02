@@ -1,0 +1,63 @@
+{
+  "name": "express-govuk-react-jsx",
+  "version": "1.0.0",
+  "description": "Express App using govuk-react-jsx",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "start-ssr": "node server/index.js",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test": "jest test",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:lint": "eslint",
+    "pretest": "npm run build && npm run test:lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "govuk-frontend": "^3.9.1",
+    "govuk-react-jsx": "^4.1.0",
+    "ignore-styles": "^5.0.1",
+    "node-sass": "^4.14.1",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-markdown": "^5.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-flow": "^7.12.1",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/register": "^7.12.10",
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.0",
+    "babel-jest": "^26.6.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "eslint": "^7.19.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
